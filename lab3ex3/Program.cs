@@ -13,7 +13,7 @@ namespace lab3ex3
 
             //patrat perfect = un număr întreg care este pătratul unui alt număr. Rădăcina pătrată a unui pătrat perfect este un număr întreg.
 
-            static bool isPerfectSquare(int n)
+            static bool IsPerfectSquare(int n)
             {
                 //daca restul impartirii radacinii patrate a lui n la 1 este 0, este patrat perfect
                 if (Math.Sqrt(n) % 1 == 0)
@@ -26,7 +26,7 @@ namespace lab3ex3
             Console.WriteLine("Introduceti numarul: ");
             int n = int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"Numarul {n} {(isPerfectSquare(n) ? "este" : "nu este")} patrat perfect");
+            Console.WriteLine($"Numarul {n} {(IsPerfectSquare(n) ? "este" : "nu este")} patrat perfect");
         }
     }
 }
